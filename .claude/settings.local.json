@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker-compose -p yuedong up)",
+      "Bash(psql -U postgres -c \"SELECT 1\")",
+      "Bash(docker run:*)",
+      "Bash(docker exec:*)",
+      "Bash(cp .env.example .env)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:3001/api/health)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(nc -zv localhost 5433)",
+      "Bash(xargs kill:*)",
+      "Bash(curl -s http://localhost:5174)",
+      "Bash(pkill -9 -f \"ts-node-dev|vite\")",
+      "Bash(curl -s http://localhost:3002/api/health)",
+      "Bash(curl -X POST http://localhost:3002/api/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"test@example.com\",\"password\":\"password123\"}')"
+    ]
+  }
+}
